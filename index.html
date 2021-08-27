@@ -1,0 +1,226 @@
+<!doctype html>
+<html>
+    <head>
+        <!-- Metadados -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="estilo.css"screen">
+        <script src="gama.js"></script>
+       
+
+        <!-- Título da página (aparece na aba) -->
+        <title>Banco de Talentos</title>
+    </head>
+
+    <body>  
+             <!-- Cabeçalho com título e subtítulo (ambos com css de id "titulo") -->
+        <div id="main-container">
+            <h1 id="titulo">CADASTRO DE CURRÍCULO</h1>
+            <!--p id="subtitulo">Complete suas informações</p>-->
+            <br>
+            <br/>
+             <!-- Início do formulário -->
+        <form name="formcadastro" action="enviar.php" method="POST">
+
+            <fieldset class="grupo">
+                           
+                <!-- Campo do nome com legenda "nome" e css de classe "campo" -->
+                <div class="campo">
+                    <label for="nome"><strong>Nome Completo</strong></label>
+                    <input type="text" name="nome" id="nome" required size="20">
+                </div>
+                <div class="campo">
+                    <label for="sobrenome"><strong>Cargo Pretendido</strong></label>
+                    <input type="text" name="sobrenome" id="sobrenome" required>
+                </div>
+                <div class="campo">
+                    <label for="profissao"><strong>Profissão</strong></label>
+                    <input type="text" name="Profissão" id="profissao" size="20">
+                </div>
+                <div class="campo">
+                    <label for="nome"><strong>Data de Nascimento</strong></label>
+                    <input type="date" name="dia" size="2" maxlength="2" value="dd" id="date"> 
+              </div>
+              
+             <div class="campo">
+                <label for="senioridade"><strong>Sexo</strong></label>
+                <select id="senioridade" required>
+                  <option selected disabled value="">Selecione</option>
+                  <option>Feminino</option>
+                  <option>Masculino</option>
+                </select>
+            </div>
+            <div class="campo">
+                <label for="senioridade"><strong>Estado Civil</strong></label>
+                <select id="senioridade" required>
+                  <option selected disabled value="">Selecione</option>
+                  <option>Solteiro</option>
+                  <option>Casado</option>
+                  <option>Separado</option>
+                  <option>Viúvo</option>
+                  <option>Outros</option>
+                </select>
+                          </fieldset> 
+
+        <fieldset class="grupo">
+         
+
+                
+        </fieldset>  
+            <!--<div class="campo">
+                <label><strong>Estado Civil</strong></label>
+                <label>
+                    <input type="radio" name="devweb" value="Solteiro" checked>Solteiro
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="Casado">Casado
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="separado">Separado
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="viuvo">Viúvo
+                </label>
+            </div>-->
+         
+<!-- Campo de email com-->
+<div class="campo">
+    <label for="Endereço"><strong>Endereço</strong></label>
+    <input type="text" name="endereço" id="endereço" required placeholder="Ex.: Nome da Rua, 10, apto01" size= "50">
+</div>
+
+<fieldset class="grupo">
+    <div class="campo">
+        <label for="bairro"><strong>Bairro</strong></label>
+        <input type="text" name="bairro" id="bairro" required size= "15">
+    </div>
+    <div class="campo">
+        <label for="cidade"><strong>Cidade</strong></label>
+        <input type="text" name="cidade" id="cidade" required size= "12">
+    </div>
+    <div class="campo">
+        <label for="cep"><strong>CEP</strong></label>
+        <input type="text" name="CEP" id="cep" required size= "12">
+    </div>
+   
+    <div class="campo">
+        <label for="senioridade"><strong>Estado</strong></label>
+        <select>
+            <option value="">Selecione</option>
+            <option value="AC">Acre</option>
+            <option value="AL">Alagoas</option>
+            <option value="AP">Amapá</option>
+            <option value="AM">Amazonas</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="DF">Distrito Federal</option>
+            <option value="ES">Espirito Santo</option>
+            <option value="GO">Goiás</option>
+            <option value="MA">Maranhão</option>
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="PA">Pará</option>
+            <option value="PB">Paraíba</option>
+            <option value="PR">Paraná</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="SP">São Paulo</option>
+            <option value="SE">Sergipe</option>
+            <option value="TO">Tocantins</option>
+        </select>
+    </div>
+    <div class="campo">
+        <label for="telefone"><strong>Telefone Fixo</strong></label>
+        <input type="tel" name="telefone" id="telefone" size="12">
+    </div>
+    <div class="campo">
+        <label for="telefone"><strong>Celular 1</strong></label>
+        <input type="tel" name="telefone" id="telefone" required size="11">
+    </div>
+</fieldset>
+<fieldset class="grupo">
+    <div class="campo">
+<label for="rg"><strong>Identidade</strong></label>
+<input type="text" name="rg" id="rg" required size="20">
+</div>
+<div class="campo">
+<label for="cpf"><strong>CPF</strong></label>
+<input type="text" name="cpf" id="cpf" required size="20">
+</div>
+</fieldset>
+<fieldset class="grupo">
+    
+   </fieldset>
+<fieldset class="grupo">
+<div class="campo">
+    <label for="email"><strong>Email</strong></label>
+    <input type="email" name="email" id="email" required size="30" placeholder="exemplo@exemplo.com">
+</div>
+<div class="campo">
+    <label for="senioridade"><strong>Possui Veículo</strong></label>
+    <select id="senioridade" required>
+      <option selected disabled value="">Selecione</option>
+      <option>Sim</option>
+      <option>Não</option>
+    </select>
+</div>
+<div class="campo">
+    <label for="senioridade"><strong>Habilitação</strong></label>
+    <select id="senioridade" required>
+      <option selected disabled value="">Selecione</option>
+      <option>Sim</option>
+      <option>Não</option>
+    </select>
+</div>
+</fieldset>
+            
+           <!-- Campo de senioridade com 3 opções para escolha (select option) e css de classe "campo" -->
+           <fieldset class="grupo">
+            <!-- Campo de tecnologias para escolha de 1 ou mais opções para marcar (checkbox) e css de classe "campo" -->
+            <div id="check">
+                <label><strong>Selecione as tecnologias que utiliza:</strong></label><br><br>
+                <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
+                <label for="tecnologia1"> HTML</label>
+                <input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS">
+                <label for="tecnologia2"> CSS</label>
+                <input type="checkbox" id="tecnologia3" name="tecnologia3" value="JavaScript">
+                <label for="tecnologia3"> JavaScript</label>
+                <input type="checkbox" id="tecnologia4" name="tecnologia4" value="PHP">
+                <label for="tecnologia4"> PHP</label>
+                <input type="checkbox" id="tecnologia5" name="tecnologia5" value="C#">
+                <label for="tecnologia5"> C#</label>
+                <input type="checkbox" id="tecnologia6" name="tecnologia6" value="Python">
+                <label for="tecnologia6"> Python</label>
+                <input type="checkbox" id="tecnologia7" name="tecnologia7" value="Java">
+                <label for="tecnologia7"> Java</label>
+            </div>
+        </fieldset>
+
+            <!-- Caixa de texto -->
+            <div class="campo">
+                <br>
+                <label for="experiencia"><strong>Conte um pouco da sua experiência Profissional: </strong></label>
+                <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
+            </div>
+                     
+
+            <!-- Botão para enviar o formulário -->
+            <br/>
+            <br/>
+                <button class="botao" type="submit" onsubmit="">Enviar</button>     
+               
+                           
+        </form>
+
+    </body>
+
+</html>
